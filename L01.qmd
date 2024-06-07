@@ -1,5 +1,5 @@
 ---
-title: "Setup Justification"
+title: "Lecture 1"
 ---
 
 ## Slides-first mentality
