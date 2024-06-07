@@ -55,35 +55,23 @@
   {
     "objectID": "L01.html#rendering-the-book",
     "href": "L01.html#rendering-the-book",
-    "title": "1  Setup Justification",
+    "title": "1  Lecture 1",
     "section": "1.2 Rendering the Book",
-    "text": "1.2 Rendering the Book\nquarto render --profile book\nAlternately,\nquarto preview --profile book",
-    "crumbs": [
-      "Setup",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup Justification</span>"
-    ]
+    "text": "1.2 Rendering the Book\nquarto render --profile book\nAlternately,\nquarto preview --profile book"
   },
   {
     "objectID": "L01.html#conditional-render-by-project",
     "href": "L01.html#conditional-render-by-project",
-    "title": "1  Setup Justification",
+    "title": "1  Lecture 1",
     "section": "1.3 Conditional Render by Project",
-    "text": "1.3 Conditional Render by Project\nThe following allows for different content in the slides versus the book.\n::: {.content-visible when-profile=\"book\"}\nContent here will only be visible when rendered using --profile book\n:::\n::: {.content-visible unless-profile=\"book\"}\nContent here will only be visible when **not** rendered using --profile book\n:::\nNotice that both of these are defined in .vscode/quarto-bookslides.code-snippets, and thus can be easily inserted when editing with VSCode (a similar setup exists in RStudio, with different syntax).",
-    "crumbs": [
-      "Setup",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup Justification</span>"
-    ]
+    "text": "1.3 Conditional Render by Project\nThe following allows for different content in the slides versus the book.\n::: {.content-visible when-profile=\"book\"}\nContent here will only be visible when rendered using --profile book\n:::\n::: {.content-visible unless-profile=\"book\"}\nContent here will only be visible when **not** rendered using --profile book\n:::\nNotice that both of these are defined in .vscode/quarto-bookslides.code-snippets, and thus can be easily inserted when editing with VSCode (a similar setup exists in RStudio, with different syntax)."
   },
   {
     "objectID": "L01.html#publishing-on-github",
     "href": "L01.html#publishing-on-github",
-    "title": "1  Setup Justification",
+    "title": "1  Lecture 1",
     "section": "1.4 Publishing on GitHub",
-    "text": "1.4 Publishing on GitHub\n\nSee Getting Started With Git for some instructions getting git set up.\n\nSee here for a wonderful introduction to using git with RStudio.\n\nGitHub Desktop can make the process simpler if you aren’t comfortable with a command line (outside of R).\n\nThe _quarto-book.yml file puts the book in the “docs” folder, and GitHub allows you to serve a static site (i.e., host a webpage) from the docs/ folder. The output-dir: docs in _quarto-book.yml is required!\nOn GitHub, go to Settings -&gt; Pages and tell it to serve the site from docs/.\nThat’s it! There are no other steps to getting your book as a github website! You’re done!",
-    "crumbs": [
-      "Setup",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Setup Justification</span>"
-    ]
+    "text": "1.4 Publishing on GitHub\n\nSee Getting Started With Git for some instructions getting git set up.\n\nSee here for a wonderful introduction to using git with RStudio.\n\nGitHub Desktop can make the process simpler if you aren’t comfortable with a command line (outside of R).\n\nThe _quarto-book.yml file puts the book in the “docs” folder, and GitHub allows you to serve a static site (i.e., host a webpage) from the docs/ folder. The output-dir: docs in _quarto-book.yml is required!\nOn GitHub, go to Settings -&gt; Pages and tell it to serve the site from docs/.\nThat’s it! There are no other steps to getting your book as a github website! You’re done!"
   },
   {
     "objectID": "L02-quarto-yml.html",
@@ -260,5 +248,12 @@
       "Appendices",
       "<span class='chapter-number'>C</span>  <span class='chapter-title'>Quorse Notes Overview Presentation</span>"
     ]
+  },
+  {
+    "objectID": "L01.html#slides-first-mentality",
+    "href": "L01.html#slides-first-mentality",
+    "title": "1  Lecture 1",
+    "section": "1.1 Slides-first mentality",
+    "text": "1.1 Slides-first mentality\n_quarto.yml assumes that the format is going to be beamer slides. This is because I use VSCode to make my slides, and Cmd-Shift-K will build according to the _quarto.yml file. This means I prototype my notes as slides, then just kinda assume that the book will look good.\nThe _quarto-book.yml has a special name. The -book part tells quarto that it’s part of the “Book” project."
   }
 ]
